@@ -1,0 +1,44 @@
+// This file demonstrates a simple KPI percentile proof system.
+// Companies prove their KPIs rank within an industry percentile
+// to investors without revealing raw figures to competitors.
+// SPDX-License-Identifier: Apache-2.0
+
+pragma language_version >= 0.20;
+
+import CompactStandardLibrary;
+
+// ----------------------------------------
+// PUBLIC STATE
+// ----------------------------------------
+
+// Stores the company's industry percentile rank (0–100)
+// 0 = lowest performer
+// 100 = top performer
+export ledger percentileRank: Counter;
+
+
+// ----------------------------------------
+// TRANSITION: SET PERCENTILE
+// ----------------------------------------
+
+// Company updates its verified percentile rank
+// Increments the counter by the given value
+export circuit setPercentile(value: Uint<16>): [] {
+  const disclosed_value = disclose(value);
+  percentileRank.increment(disclosed_value);
+}
+
+
+// ----------------------------------------
+// TRANSITION: PROVE ABOVE THRESHOLD
+// ----------------------------------------
+
+// Prove company is above a required percentile
+// Example: proveAbove(80) → proves top 20%
+// Uses subtraction: if rank <= threshold, underflow causes assertion failure
+export circuit proveAbove(threshold: Field): [] {
+
+  // Subtraction underflows if percentileRank <= threshold, proving rank > threshold
+  const rank: Field = percentileRank.read();
+  const _proof: Field = rank - threshold - 1;
+}

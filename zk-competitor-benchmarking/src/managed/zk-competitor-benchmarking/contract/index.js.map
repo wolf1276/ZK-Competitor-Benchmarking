@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "../../../../",
+  "sources": ["src/ZKCompetitorBenchmarking.compact"],
+  "names": [],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAKA;;;;;;;;;;MAoBA,AAAA,aAGC;;;;;cAH4B,OAAe;;;;;;;;;;;;;;;;;;yCAAf,OAAe;;;;;;;;;+CAAf,OAAe;;;OAG3C;MAUD,AAAA,UAKC;;;;;cALyB,WAAgB;;;;;;;;;;;;;;;;;;yCAAhB,WAAgB;;;;;;;;;4CAAhB,WAAgB;;;OAKzC;;;;;;GAAC;EAtCF;;;;;;;;;;;;;;;;;;;;;;;;;;;IAWA;;;;;;;;;yEAAsC;;;;;;;GA2BpC;EAlBF,AAAA,gBAGC,4BAH4B,OAAe;UACpC,iBAAiC,GAAN,OAAK;IACtC;;;;;;;;;;6FAAyB,iBAAe;;;;wEAA1B;;GACf;EAUD,AAAA,aAKC,4BALyB,WAAgB;UAGlC,MAAmC,2BAArB;;;;;;;;;;;gHAAc;UAC5B,QAAoC,uDAApB,MAAI;yEAAG,WAAS;;;GACvC;;;;;;;;;;;;;;;;IA3BD;qCAAA;;;;;;;;;;;0GAAsC;KAAA;;;;;;;;;;"
+}
