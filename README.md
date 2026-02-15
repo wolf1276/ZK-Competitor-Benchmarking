@@ -1,3 +1,5 @@
+
+
 <p align="center">
   <h1 align="center">🔐 ZK Competitor Benchmarking</h1>
   <p align="center">
@@ -6,6 +8,10 @@
   <p align="center">
     Built on <a href="https://midnight.network">Midnight Network</a> · Zero-Knowledge Proofs · Privacy-First
   </p>
+</p>
+
+<p align="center">
+  <img src="assets/company-dashboard.png" alt="Company Dashboard — Set Percentile Rank" width="600" />
 </p>
 
 ---
